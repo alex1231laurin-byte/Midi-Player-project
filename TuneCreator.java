@@ -9,7 +9,7 @@ public class TuneCreator
 {
     // variables d'instance - remplacez l'exemple qui suit par le vôtre
     private MidiPlayer player;
-
+    private SimpleTune simpleStorage;
     /**
      * Constructeur d'objets de classe TuneCreator
      */
@@ -20,10 +20,16 @@ public class TuneCreator
     }
 
     /**
-     * Un exemple de méthode - remplacez ce commentaire par le vôtre
-     *
-     * @param  y   le paramètre de la méthode
-     * @return     la somme de x et de y
+     * CreateAndPlay
+     *Saves a SimpleTune and plays it
+     * Simple as that
+     * @param noteName The name of the note; e.g., "C", "C#", "E5", etc.
+     * @param duration The length of time the note should be played for.
      */
-
+    public void CreateAndPlay(String noteName, int duration)
+    {
+        simpleStorage = new SimpleTune();
+        simpleStorage.addNote(noteName, duration);
+        player.playTune(simpleStorage);
+    }
 }
