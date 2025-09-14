@@ -11,7 +11,7 @@ It is discussed in chapter 3.
  
 41: I see C (5) and could not play the tune.
 43: Yes.
-45: 
+45: int duration = note.getDuration(); and catch (InvalidMidiDataException e)
 46: 
 47: 
 48: 
