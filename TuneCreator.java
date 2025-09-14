@@ -32,4 +32,13 @@ public class TuneCreator
         simpleStorage.addNote(noteName, duration);
         player.playTune(simpleStorage);
     }
+    
+        /**
+     * Set the instrument to be used.
+     * @param instrument A positive value within the range of available instruments.
+     */
+    public void setInstrument(int instrument)
+    {
+        simpleStorage.setInstrument(instrument);
+    }
 }
